@@ -29,7 +29,7 @@ minScans : 1 (no restriction on the number of scans to be considered)
 mzd = 0.02 #consensusSpectrum parameter from MSnbase
 minProp = 0.11 #consensusSpectrum parameter from MSnbase
 
-This first step will help you see how many of your files cannot be processed as they probably don't have MS/MS spectra for you molecule (or that it is present as an adduct missing from the MasterList, make sure to check for these files if the run actually is "empty" using a software to visualise your data, like MZmine(link)). You will also be able to see the total number of MS/MS scans for each ions in the logFile (spectra_merged column).
+This first step will help you see how many of your files cannot be processed as they probably don't have MS/MS spectra for you molecule (or that it is present as an adduct missing from the MasterList, make sure to check for these files if the run actually is "empty" using a software to visualise your data, like MZmine(http://mzmine.github.io/)). You will also be able to see the total number of MS/MS scans for each ions in the logFile (spectra_merged column).
 You can evaluate the quality of the merged scans, as their are all displayed once they've been produced. Check the actual spectra to spot if any peaks are being deleted, or if too much noise is being introduced. You can note the "j" values of each spectrum to make a list of unsatisfactory spectra to rerun them with other parameters. Change the mzd and minProp values to improve the results.
 
 # If you are looking to differentiate peaks with the same precursor m/z, start probing with different parameters while verifying the fitness of the parameters using a software to visualise your data.
